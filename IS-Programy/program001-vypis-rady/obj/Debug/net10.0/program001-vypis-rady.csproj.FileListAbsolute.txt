@@ -1,0 +1,15 @@
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\bin\Debug\net10.0\program001-vypis-rady.exe
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\bin\Debug\net10.0\program001-vypis-rady.deps.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\bin\Debug\net10.0\program001-vypis-rady.runtimeconfig.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\bin\Debug\net10.0\program001-vypis-rady.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\bin\Debug\net10.0\program001-vypis-rady.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.GeneratedMSBuildEditorConfig.editorconfig
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.AssemblyInfoInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.AssemblyInfo.cs
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.csproj.CoreCompileInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.sourcelink.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\refint\program001-vypis-rady.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\program001-vypis-rady.genruntimeconfig.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program001-vypis-rady\obj\Debug\net10.0\ref\program001-vypis-rady.dll

@@ -1,0 +1,15 @@
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\bin\Debug\net10.0\program000a-zakladni-program.exe
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\bin\Debug\net10.0\program000a-zakladni-program.deps.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\bin\Debug\net10.0\program000a-zakladni-program.runtimeconfig.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\bin\Debug\net10.0\program000a-zakladni-program.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\bin\Debug\net10.0\program000a-zakladni-program.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.GeneratedMSBuildEditorConfig.editorconfig
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.AssemblyInfoInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.AssemblyInfo.cs
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.csproj.CoreCompileInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.sourcelink.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\refint\program000a-zakladni-program.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\program000a-zakladni-program.genruntimeconfig.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program000a-zakladni-program\obj\Debug\net10.0\ref\program000a-zakladni-program.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\program001-vypis-rady.csproj",
+      "projectUniqueName": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\program001-vypis-rady.csproj",
       "projectName": "program001-vypis-rady",
-      "projectPath": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\program001-vypis-rady.csproj",
+      "projectPath": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\program001-vypis-rady.csproj",
       "packagesPath": "C:\\Users\\Honik\\.nuget\\packages\\",
-      "outputPath": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\obj\\",
+      "outputPath": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program001-vypis-rady\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Honik\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

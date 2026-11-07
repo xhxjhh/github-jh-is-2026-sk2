@@ -9,7 +9,7 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.Clear();
     Console.WriteLine("******************************************");
-    Console.WriteLine("************* Ciferný součet *************");
+    Console.WriteLine("******** Ciferný součet a součin ********");
     Console.WriteLine("******************************************");
     Console.WriteLine("************** Jan Havlicek ***************");
     Console.WriteLine("******************************************");
@@ -38,6 +38,7 @@ while(again.ToLower() == "a" )
     // 1. Příprava pomocných proměnných pro výpočet
     int numberBackup = number; // Záloha původního čísla pro závěrečný výpis
     int sum = 0;               // Neutrální hodnotou pro sčítání je 0
+    int product = 1;           // Neutrální hodnotou pro násobení je 1 (ne 0!)
     int digit;                 // Proměnná pro uložení právě zpracovávané číslice 
 
     // 2. Ošetření záporných čísel (znaménko nemá vliv na součet cifer)
@@ -49,7 +50,8 @@ while(again.ToLower() == "a" )
     // 3. zvláštní případ
     if (number == 0)
     {
-        sum = 0;
+        sum = 0;     // Součet cifer čísla 0 je 0
+        product = 0; // Součin cifer čísla 0 je 0 (jinak by zůstal neutrální 1)
     }
     else
     {
@@ -60,13 +62,15 @@ while(again.ToLower() == "a" )
         while (number > 0 )
         {
             // Operátoru % se říká MODULO (slouží k určení zbytku po celočíselném dělení)
-            digit = number % 10;  // MODULO 10 nám získá poslední číslici
-            sum = sum + digit;    // Přičtení číslice k celkovému součtu
-            number = number / 10; // Celočíselné dělení 10kou odstraní poslední číslici 
+            digit = number % 10;      // MODULO 10 nám získá poslední číslici
+            sum = sum + digit;        // Přičtení číslice k celkovému součtu
+            product = product * digit; // Vynásobení číslice k celkovému součinu
+            number = number / 10;     // Celočíselné dělení 10kou odstraní poslední číslici 
 
             Console.WriteLine($"Aktuální číslice (zbytek): {digit}");
             Console.WriteLine($"Číslo po odříznutí aktuální číslice: {number}");
             Console.WriteLine($"Aktuální hodnota ciferného součtu: {sum}");
+            Console.WriteLine($"Aktuální hodnota ciferného součinu: {product}");
 
         }
     }
@@ -78,6 +82,7 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.WriteLine("==================================");
     Console.WriteLine($"Ciferný součet čísla {numberBackup} je {sum}");
+    Console.WriteLine($"Ciferný součin čísla {numberBackup} je {product}");
     Console.WriteLine("==================================");
     Console.WriteLine();
 

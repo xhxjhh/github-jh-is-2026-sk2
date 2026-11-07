@@ -1,5 +1,4 @@
-﻿
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 Console.Clear();
 string again = "a";
@@ -9,7 +8,7 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.Clear();
     Console.WriteLine("******************************************");
-    Console.WriteLine("************* Ciferný součet *************");
+    Console.WriteLine("******** Ciferný součet a součin ********");
     Console.WriteLine("******************************************");
     Console.WriteLine("************** Jan Havlicek ***************");
     Console.WriteLine("******************************************");
@@ -24,7 +23,6 @@ while(again.ToLower() == "a" )
     }
 
     
-    
     // Rekapitulace zadaných hodnot
     Console.WriteLine();
     Console.WriteLine("==================================");
@@ -34,43 +32,42 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
 
     // Jádro konkrétního algortimu 
-    
+    // JINÝ ZPŮSOB ŘEŠENÍ: číslo převedeme na text (string) a procházíme jeho jednotlivé znaky
+
     // 1. Příprava pomocných proměnných pro výpočet
     int numberBackup = number; // Záloha původního čísla pro závěrečný výpis
     int sum = 0;               // Neutrální hodnotou pro sčítání je 0
+    int product = 1;           // Neutrální hodnotou pro násobení je 1 (ne 0!)
     int digit;                 // Proměnná pro uložení právě zpracovávané číslice 
 
-    // 2. Ošetření záporných čísel (znaménko nemá vliv na součet cifer)
-    if(number < 0)
-    {
-        number = -number;
-    } 
+    // 2. Math.Abs odstraní znaménko (to pro součet/součin cifer nepotřebujeme)
+    //    a .ToString() převede číslo na text, jehož znaky jsou jednotlivé číslice
+    string digits = Math.Abs(number).ToString();
 
     // 3. zvláštní případ
     if (number == 0)
     {
-        sum = 0;
+        sum = 0;     // Součet cifer čísla 0 je 0
+        product = 0; // Součin cifer čísla 0 je 0 (jinak by zůstal neutrální 1)
     }
     else
     {
         Console.WriteLine();
-        Console.WriteLine("Průběh rozkladu čísla na jednotlivé číslice (z prava do leva)");
-        
-        // 4. Jádro problému - matematický rozklad čísla pomocí cyklu
-        while (number > 0 )
+        Console.WriteLine("Průběh rozkladu čísla na jednotlivé číslice (z leva do prava)");
+
+        // 4. Jádro problému - procházení znaků (číslic) v textu
+        foreach (char c in digits)
         {
-            // Operátoru % se říká MODULO (slouží k určení zbytku po celočíselném dělení)
-            digit = number % 10;  // MODULO 10 nám získá poslední číslici
-            sum = sum + digit;    // Přičtení číslice k celkovému součtu
-            number = number / 10; // Celočíselné dělení 10kou odstraní poslední číslici 
+            // Znak '0' má svou číselnou hodnotu; odečtením znaku '0' získáme přímo číslici
+            digit = c - '0';
+            sum = sum + digit;         // Přičtení číslice k celkovému součtu
+            product = product * digit; // Vynásobení číslice k celkovému součinu
 
-            Console.WriteLine($"Aktuální číslice (zbytek): {digit}");
-            Console.WriteLine($"Číslo po odříznutí aktuální číslice: {number}");
+            Console.WriteLine($"Aktuální znak (číslice): {c}");
             Console.WriteLine($"Aktuální hodnota ciferného součtu: {sum}");
-
+            Console.WriteLine($"Aktuální hodnota ciferného součinu: {product}");
         }
     }
-
 
     // 5. Výpis výsledků
     Console.WriteLine();
@@ -78,18 +75,11 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.WriteLine("==================================");
     Console.WriteLine($"Ciferný součet čísla {numberBackup} je {sum}");
+    Console.WriteLine($"Ciferný součin čísla {numberBackup} je {product}");
     Console.WriteLine("==================================");
     Console.WriteLine();
 
-    
-
-
-
-
-    
-
     // Konec jádra konkrétního algoritmu
-
 
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
@@ -101,4 +91,3 @@ while(again.ToLower() == "a" )
     again = Console.ReadLine() ?? "";
 
 }   
-

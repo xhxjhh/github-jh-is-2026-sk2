@@ -1,4 +1,4 @@
-﻿﻿Console.Clear();
+﻿Console.Clear();
 string again = "a";
 // .ToLower() převede vstup na malá písmena, takže program bude pokračovat při zadávání "a" tak i "A"
 while(again.ToLower() == "a" )
@@ -47,6 +47,24 @@ while(again.ToLower() == "a" )
 
     // Jádro konkrétního algortimu 
     
+    // Deklarace pole a alokace v paměti
+    int[] myRandNumbs = new int[n];
+
+    // Inicializace generátoru náhodných čísel
+    Random myRandNumb = new Random();
+    // Random myRandNumb = new Random(50); // Pevný seed pro testovací účely (vždy stejná čísla)
+
+    Console.WriteLine("Generovaná čísla: ");
+    for(int i = 0; i < myRandNumbs.Length; i++ )
+    {
+        // Generování i-tého náhodného čísla
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound+1);
+        Console.Write($"{myRandNumbs[i]}; ");
+    }
+
+
+
+
 
     // Konec jádra konkrétního algoritmu
 
@@ -61,3 +79,4 @@ while(again.ToLower() == "a" )
     again = Console.ReadLine() ?? "";
 
 }   
+

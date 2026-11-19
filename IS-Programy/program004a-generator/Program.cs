@@ -1,4 +1,4 @@
-﻿Console.Clear();
+﻿﻿Console.Clear();
 string again = "a";
 // .ToLower() převede vstup na malá písmena, takže program bude pokračovat při zadávání "a" tak i "A"
 while(again.ToLower() == "a" )
@@ -6,34 +6,42 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.Clear();
     Console.WriteLine("******************************************");
-    Console.WriteLine("*************** Název programu ***************");
+    Console.WriteLine("**** Generátor pseudonáhodných čísel *****");
     Console.WriteLine("******************************************");
     Console.WriteLine("************** Jan Havlíček ***************");
     Console.WriteLine("******************************************");
     Console.WriteLine("******************************************");
 
-    // Vstup první hodnoty
-    Console.Write("Zadejte první hodnotu (celé číslo): ");
-    int aaa;
-    while(!int.TryParse(Console.ReadLine(), out aaa))
+    // Vstup pro počet generovaných čísel
+    Console.Write("Zadejte počet generovaných (kladné celé číslo): ");
+    int n;
+    while(!int.TryParse(Console.ReadLine(), out n) || n<=0 )
     {
-        Console.Write("Nezadali jste celé číslo! Zadejte první hodnotu znovu (celé číslo): ");
+        Console.Write("Nezadali jste celé kladné celé číslo! Zadejte počet čísel znovu: ");
     }
 
-    // Vstup další hodnoty
-    Console.Write("Zadejte další hodnotu (celé číslo): ");
-    int bbb;
-    while(!int.TryParse(Console.ReadLine(), out bbb))
+    // Vstup pro dolní mez
+    Console.Write("Zadejte dolní mez (celé číslo): ");
+    int lowerBound;
+    while(!int.TryParse(Console.ReadLine(), out lowerBound))
     {
-        Console.Write("Nezadali jste celé číslo! Zadejte další hodnotu znovu (celé číslo): ");
+        Console.Write("Nezadali jste celé číslo! Zadejte dolní mez znovu: ");
     }
 
-    
+    // Vstup pro horní mez
+    Console.Write("Zadejte horní mez (celé číslo větší nebo rovno hodnotě pro dolní mez): ");
+    int upperBound;
+    while(!int.TryParse(Console.ReadLine(), out upperBound) || upperBound < lowerBound)
+    {
+        Console.Write("Nezadali jste celé číslo nebo je horní mez menší než dolní mez! Zadejte horní mez znovu: ");
+    }
+
+  
     // Rekapitulace zadaných hodnot
     Console.WriteLine();
     Console.WriteLine("==================================");
     // Výpis zadaných hodnot do jednoho řádku
-    Console.WriteLine($"První hodnota: {aaa}; Další hodnota: {bbb}");
+    Console.WriteLine($"Počet generovaných čísel: {n}; Dolní mez: {lowerBound}; Horní mez: {upperBound}");
     Console.WriteLine("==================================");
     Console.WriteLine();
 
@@ -53,4 +61,3 @@ while(again.ToLower() == "a" )
     again = Console.ReadLine() ?? "";
 
 }   
-

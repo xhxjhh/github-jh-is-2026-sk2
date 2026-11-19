@@ -62,9 +62,54 @@ while(again.ToLower() == "a" )
         Console.Write($"{myRandNumbs[i]}; ");
     }
 
+    // Statistika vygenerovaných čísel
+    // Počítadla vždy začínají na nule, protože ještě nic nespočítala
+    int positiveCount = 0; // Počet kladných čísel
+    int negativeCount = 0; // Počet záporných čísel
+    int zeroCount = 0;     // Počet nul
+    int evenCount = 0;     // Počet sudých čísel
+    int oddCount = 0;      // Počet lichých čísel
 
+    // Projdeme vygenerované číslo po čísle a podle podmínek navyšujeme počítadla
+    foreach (int number in myRandNumbs)
+    {
+        // Rozlišení kladné / záporné / nulové
+        if (number > 0)
+        {
+            positiveCount++;
+        }
+        else if (number < 0)
+        {
+            negativeCount++;
+        }
+        else
+        {
+            zeroCount++;
+        }
 
+        // Rozlišení sudé / liché
+        // Pozor: nula je sudá (0 % 2 == 0), proto se započítá mezi sudá
+        if (number % 2 == 0)
+        {
+            evenCount++;
+        }
+        else
+        {
+            oddCount++;
+        }
+    }
 
+    // Výpis statistiky
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine("==================================");
+    Console.WriteLine("Statistika vygenerovaných čísel:");
+    Console.WriteLine($"Kladných: {positiveCount}");
+    Console.WriteLine($"Záporných: {negativeCount}");
+    Console.WriteLine($"Nulových: {zeroCount}");
+    Console.WriteLine($"Sudých: {evenCount}");
+    Console.WriteLine($"Lichých: {oddCount}");
+    Console.WriteLine("==================================");
 
     // Konec jádra konkrétního algoritmu
 

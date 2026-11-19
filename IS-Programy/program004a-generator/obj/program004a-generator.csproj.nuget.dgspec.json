@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj": {}
+    "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj": {}
   },
   "projects": {
-    "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj": {
+    "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj",
+        "projectUniqueName": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj",
         "projectName": "program004a-generator",
-        "projectPath": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj",
+        "projectPath": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\program004a-generator.csproj",
         "packagesPath": "C:\\Users\\Honik\\.nuget\\packages\\",
-        "outputPath": "c:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\obj\\",
+        "outputPath": "C:\\SKola\\Informace a systémy\\github-jh-is-2026-sk2\\IS-Programy\\program004a-generator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Honik\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -96,6 +96,33 @@ while(again.ToLower() == "a" )
     Console.WriteLine($"Pozice prvního minima: {minPosition}");
     Console.WriteLine("==================================");
 
+    // Rozšíření: zjištění počtu maximálních hodnot a všech jejich pozic
+    // Maximum už známe, proto stačí pole projít znovu a hledat shodu s hodnotou "max"
+    int maxCount = 0;           // Kolikrát se maximum v poli vyskytlo
+    string maxPositions = "";   // Přehledný textový seznam všech pozic maxim
+
+    for (int i = 0; i < myRandNumbs.Length; i++)
+    {
+        if (myRandNumbs[i] == max)
+        {
+            maxCount++;
+
+            // Za první pozicí oddělovač nepíšeme, před každou další přidáme ", "
+            if (maxCount > 1)
+            {
+                maxPositions += ", ";
+            }
+            maxPositions += i;
+        }
+    }
+
+    // Výpis rozšířených výsledků pro maximum
+    Console.WriteLine();
+    Console.WriteLine("==================================");
+    Console.WriteLine($"Počet maximálních hodnot: {maxCount}");
+    Console.WriteLine($"Pozice všech maximálních hodnot: {maxPositions}");
+    Console.WriteLine("==================================");
+
     // Vykreslení obrazce přesýpacích hodin
     // Obrazec vykreslujeme pouze tehdy, je-li maximum alespoň 3
     if (max >= 3)

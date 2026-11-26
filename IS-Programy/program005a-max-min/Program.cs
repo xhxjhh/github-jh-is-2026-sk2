@@ -123,6 +123,33 @@ while(again.ToLower() == "a" )
     Console.WriteLine($"Pozice všech maximálních hodnot: {maxPositions}");
     Console.WriteLine("==================================");
 
+    // Rozšíření: zjištění počtu minimálních hodnot a všech jejich pozic
+    // Stejný postup jako u maxima, jen porovnáváme s hodnotou "min"
+    int minCount = 0;           // Kolikrát se minimum v poli vyskytlo
+    string minPositions = "";   // Přehledný textový seznam všech pozic minim
+
+    for (int i = 0; i < myRandNumbs.Length; i++)
+    {
+        if (myRandNumbs[i] == min)
+        {
+            minCount++;
+
+            // Za první pozicí oddělovač nepíšeme, před každou další přidáme ", "
+            if (minCount > 1)
+            {
+                minPositions += ", ";
+            }
+            minPositions += i;
+        }
+    }
+
+    // Výpis rozšířených výsledků pro minimum
+    Console.WriteLine();
+    Console.WriteLine("==================================");
+    Console.WriteLine($"Počet minimálních hodnot: {minCount}");
+    Console.WriteLine($"Pozice všech minimálních hodnot: {minPositions}");
+    Console.WriteLine("==================================");
+
     // Vykreslení obrazce přesýpacích hodin
     // Obrazec vykreslujeme pouze tehdy, je-li maximum alespoň 3
     if (max >= 3)

@@ -96,6 +96,43 @@ while(again.ToLower() == "a" )
     Console.WriteLine($"Pozice prvního minima: {minPosition}");
     Console.WriteLine("==================================");
 
+    // Vykreslení obrazce přesýpacích hodin
+    // Obrazec vykreslujeme pouze tehdy, je-li maximum alespoň 3
+    if (max >= 3)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Přesýpací hodiny (výška i šířka = maximum):");
+
+        // Počet řádků obrazce odpovídá maximu
+        for (int row = 0; row < max; row++)
+        {
+            // Vzdálenost řádku od bližšího okraje (horního nebo dolního)
+            int distance = Math.Min(row, max - 1 - row);
+
+            // Směrem ke středu ubývá vždy o dvě hvězdičky
+            int stars = max - 2 * distance;
+
+            // Odsazení zleva, aby byl obrazec vycentrovaný pod sebou
+            int spaces = max - stars;
+
+            Console.Write(new string(' ', spaces));
+
+            // Vykreslení hvězdiček řádku (za každou hvězdičkou následuje mezera)
+            for (int s = 0; s < stars; s++)
+            {
+                Console.Write("* ");
+            }
+
+            Console.WriteLine();
+        }
+    }
+    else
+    {
+        // Maximum je příliš malé na to, aby obrazec vypadal jako přesýpací hodiny
+        Console.WriteLine();
+        Console.WriteLine("Maximum je menší než 3, obrazec se nevykresluje.");
+    }
+
     // Konec jádra konkrétního algoritmu
 
 

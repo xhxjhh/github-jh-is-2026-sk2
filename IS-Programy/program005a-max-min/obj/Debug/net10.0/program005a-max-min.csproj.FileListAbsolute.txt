@@ -1,0 +1,15 @@
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\bin\Debug\net10.0\program005a-max-min.exe
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\bin\Debug\net10.0\program005a-max-min.deps.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\bin\Debug\net10.0\program005a-max-min.runtimeconfig.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\bin\Debug\net10.0\program005a-max-min.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\bin\Debug\net10.0\program005a-max-min.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.GeneratedMSBuildEditorConfig.editorconfig
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.AssemblyInfoInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.AssemblyInfo.cs
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.csproj.CoreCompileInputs.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.sourcelink.json
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\refint\program005a-max-min.dll
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.pdb
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\program005a-max-min.genruntimeconfig.cache
+C:\SKola\Informace a systémy\github-jh-is-2026-sk2\IS-Programy\program005a-max-min\obj\Debug\net10.0\ref\program005a-max-min.dll

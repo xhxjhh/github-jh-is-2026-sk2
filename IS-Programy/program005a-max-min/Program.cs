@@ -48,6 +48,54 @@ while(again.ToLower() == "a" )
     // Jádro konkrétního algortimu 
     
 
+    // Deklarace pole a alokace v paměti
+    int[] myRandNumbs = new int[n];
+
+    // Inicializace generátoru náhodných čísel
+    Random myRandNumb = new Random();
+
+    Console.WriteLine("Náhodná čísla:");
+    for(int i = 0; i < myRandNumbs.Length; i++ )
+    {
+        // Generování i-tého náhodného čísla
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound+1);
+        Console.Write($"{myRandNumbs[i]}; ");
+    }
+    Console.WriteLine();
+
+    // Hledání extrémů začneme od prvního prvku pole (index 0)
+    int max = myRandNumbs[0];       // Zatím považujeme první prvek za maximum
+    int maxPosition = 0;            // Pozice (index) zatím nalezeného maxima
+    int min = myRandNumbs[0];       // Zatím považujeme první prvek za minimum
+    int minPosition = 0;            // Pozice (index) zatím nalezeného minima
+
+    // Projdeme zbytek pole (od indexu 1) a porovnáváme s dosavadním extrémem
+    for(int i = 1; i < myRandNumbs.Length; i++)
+    {
+        // Ostrá nerovnost ">" zajistí, že při stejné hodnotě zůstane uložena PRVNÍ pozice
+        if(myRandNumbs[i] > max)
+        {
+            max = myRandNumbs[i];
+            maxPosition = i;
+        }
+
+        // Stejně u minima - ostrá nerovnost "<" = první výskyt minima
+        if(myRandNumbs[i] < min)
+        {
+            min = myRandNumbs[i];
+            minPosition = i;
+        }
+    }
+
+    // Výpis výsledků
+    Console.WriteLine();
+    Console.WriteLine("==================================");
+    Console.WriteLine($"Maximum: {max}");
+    Console.WriteLine($"Pozice prvního maxima: {maxPosition}");
+    Console.WriteLine($"Minimum: {min}");
+    Console.WriteLine($"Pozice prvního minima: {minPosition}");
+    Console.WriteLine("==================================");
+
     // Konec jádra konkrétního algoritmu
 
 

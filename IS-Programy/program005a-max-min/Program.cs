@@ -103,9 +103,23 @@ while(again.ToLower() == "a" )
         Console.WriteLine();
         Console.WriteLine("Přesýpací hodiny (výška i šířka = maximum):");
 
+        // Paleta barev - každý řádek obrazce se vykreslí jinou barvou (barvy se cyklicky opakují)
+        ConsoleColor[] colors = new ConsoleColor[]
+        {
+            ConsoleColor.Red,
+            ConsoleColor.Green,
+            ConsoleColor.Yellow,
+            ConsoleColor.Blue,
+            ConsoleColor.Magenta,
+            ConsoleColor.Cyan
+        };
+
         // Počet řádků obrazce odpovídá maximu
         for (int row = 0; row < max; row++)
         {
+            // Barva aktuálního řádku vybraná z palety (modulo zajistí opakování barev)
+            Console.ForegroundColor = colors[row % colors.Length];
+
             // Vzdálenost řádku od bližšího okraje (horního nebo dolního)
             int distance = Math.Min(row, max - 1 - row);
 
@@ -125,6 +139,9 @@ while(again.ToLower() == "a" )
 
             Console.WriteLine();
         }
+
+        // Vrácení původní barvy, aby zbytek textu (dotaz na opakování) nebyl obarvený
+        Console.ResetColor();
     }
     else
     {
